@@ -4,14 +4,14 @@
  */
 class PlayGround {
     /**
-     * @method findoccurrance reports the numbers of time a 1 got repeated consecutively 
+     * @method findOccurrance reports the numbers of time a 1 got repeated consecutively 
      * @param string number - e.g 10101101100111
      * @return integer - e.g 3
      */
-    findoccurrance = number => {
+    findOccurrance = number => {
         // check for input first
         if(!number) {
-            return 'please enter a number compressing of 1s and 0s'
+            return 'please enter a string of 1s and 0s'
         }
         let last_num = null;
         let numbers = number.split('');
@@ -136,7 +136,7 @@ let playground = new PlayGround();
 let input = document.getElementById('input');
 
 const FindOccurance = () => {
-    let res = playground.findoccurrance(input.value);
+    let res = playground.findOccurrance(input.value);
     showResult(res);
 }
 
